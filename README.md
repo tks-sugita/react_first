@@ -181,8 +181,9 @@ for (let index = 0; index < nameArr.length; index++){
 山田
 杉田
 ```
-```
+
 テンプレート文字列
+```
 const nameArr = ["田中","山田","杉田"]
 for (let index = 0; index < nameArr.length; index++){
  console.log(`${index+1}番目は${nameArr[index]}です');
@@ -219,8 +220,9 @@ nameArr.map((name,index) => console.log(`${index + 1}番目は${name}です`));
 1番目は田中です
 2番目は山田です
 3番目は杉田です
-
+```
 ### 実践
+```
 const nameArr = ["田中","山田","杉田"]
 const newNameArr = nameArr.map((name)=>{
   if (name === "杉田"){
@@ -235,9 +237,9 @@ console.log(newNameArr);
 田中さん
 山田さん
 杉田
-
+```
 ### filter(ある条件に一致したものだけを配列として返す)
-
+```
 const numArr = [1,2,3,4,5];
 const newNumArr = numArr.filter((num) => {
   return num % 2 ===1 //２で割った値が1の場合
@@ -247,11 +249,12 @@ console.log(newNumArr);
 
 表示結果
 1,3,5
-
+```
 
 ## 三項演算子?
 
 ### ある条件 ? 条件がtrueのとき : 条件がfalseのとき
+```
 const val1 = 1 < 0 ? 'trueです'  :  'falseです' ;
 console.log(val1);
 
@@ -266,11 +269,13 @@ console.log(checkSum(50,60));
 
 表示結果
 100を超えています。
-
+```
 ## 論理演算子
 ### 論理演算子注意事項
+```
 ||は左がfalseなら右側を返す
 左を見てfalseであれば右を見るので、どちらかがという判定になる
 
 &&は左がtrueであれば右がわを返す
 左を見てtrueであれば右をみるので、かつという判定になる
+```
